@@ -1,8 +1,27 @@
 aid: diametric-capital
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/diametric-capital.png
 name: Diametric Capital
-description: Diametric Capital is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Diametric Capital is an equity long/short, multi-manager investment fund firm
+  headquartered in Boston and New York. The firm builds customizable funds that
+  isolate what it calls "True Alpha" — returns uncorrelated to the broader market
+  — by removing beta and factor risk exposure to deliver performance with
+  below-average volatility. Alongside its funds it offers aligned fee structures,
+  capital partnerships, and business development support to entrepreneurs and
+  emerging managers. Diametric Capital is a private financial firm and does not
+  publish a public developer program, API, or SDK surface; it operates a secure
+  client data room for investors and partners.
 url: https://raw.githubusercontent.com/api-evangelist/diametric-capital/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +29,38 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-industry: financial-services
+x-no-api-surface: true
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Financial Services
+- Investment Management
+- Hedge Fund
+- Asset Management
+- Alternative Investments
+- Boston
+- New York
 apis: []
+common:
+- type: DomainSecurity
+  url: security/diametric-capital-domain-security.yml
+- type: Website
+  url: https://www.diametriccapital.com
+- type: Login
+  name: Client Data Room
+  url: https://diametriccapital.securevdr.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company-beta/11007915/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
